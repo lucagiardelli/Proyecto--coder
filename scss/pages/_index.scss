@@ -1,0 +1,48 @@
+.main__content {
+    display: flex;
+    background-color: #ffffff;
+    padding: 40px;
+    width: 90%;
+    border-radius: 10px;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__content__title {
+    color: rgb(3, 3, 3);
+    text-align: center;
+    font-size: 50px;
+    margin-block: 30px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.main__content__ilustrations{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.main__content__ilustrations__img {
+    height: 17rem;
+    width: auto;
+    padding: 0% 1rem;
+}
+
+.main__content__ilustrations__title {
+    color: rgb(0, 0, 0);
+    font-size: 30px;  
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+.main__content__paragraph {
+    padding: 1rem ;
+}
+
+@media (max-width: 576px) {
+    .main__content__ilustrations__img {
+        height: 10rem;
+    }   
+}

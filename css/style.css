@@ -1,403 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Roboto+Mono:wght@500&family=Teko:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Roboto+Mono:wght@500&family=Teko:wght@300&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-ul{
-    list-style-type: none;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul {
+  list-style-type: none; }
 
 a {
-    text-decoration: none;
-}
+  text-decoration: none; }
 
 p {
-    line-height: 1,5;
-    color: rgb(0, 0, 0);
-    font-family: sans-serif;
-    font-size: 20px;
-}
+  line-height: 1,5;
+  color: black;
+  font-family: sans-serif;
+  font-size: 20px; }
 
 h3 {
-    font-family: sans-serif;
-}
+  font-family: sans-serif; }
 
 body {
-    background: url(../assets/images/fondo2.jpg);
-    background-size: cover;
-    background-repeat: repeat;
-    padding: 0;
-    min-height: 100vh;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #fec356 ;
-    top: 0%;
-    position: sticky;
-    font-family: 'Roboto Mono', monospace;
-}
-
-.header__title {
-    font-family: 'Roboto Mono', monospace;
-    font-size: xx-large;
-}
-
-.header__content {
-    display: flex;
-    justify-content: space-between;
-}
-
-#header__content__navbar-gap {
-    display: flex;
-    gap: 1rem;
-}
-
-.header__logo {
-    cursor: pointer;
-}
-
-.header__content__navbar ul {
-    display: flex;
-    gap: 1rem;
-}
-
-.header__content__navbar li{
-    display: inline-block;
-    margin-inline:20px;
-    transition: 0,3s;
-}
-
-.header__content__navbar li:hover {
-    font-size: 15px;
-    color: red;
-    border: 2px solid #252525;
-    background-color: white;
-}
-
-.header__content__navbar a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    cursor: pointer;
-}
+  background: url(../assets/images/fondo2.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  padding: 0;
+  min-height: 100vh; }
 
 main {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-block: 50px;
-}
-
-.main__content {
-    display: flex;
-    background-color: #ffffff;
-    padding: 40px;
-    width: 90%;
-    border-radius: 10px;
-    flex-direction: column;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-}
-
-.main__content__title {
-    color: rgb(3, 3, 3);
-    text-align: center;
-    font-size: 50px;
-    margin-block: 30px;
-    font-family: 'Roboto Mono', monospace;
-}
-
-.main__content__ilustrations{
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    flex-wrap: wrap;
-}
-
-.main__content__ilustrations__img {
-    height: 17rem;
-    width: auto;
-    padding: 0% 1rem;
-}
-
-.main__content__ilustrations__title {
-    color: rgb(0, 0, 0);
-    font-size: 30px;  
-    text-align: center;
-    font-family: 'Roboto Mono', monospace;
-}
-.main__content__paragraph {
-    padding: 1rem ;
-}
-
-.main__content__jugabilidad {
-    display: flex;
-    background-color: #ffffff;
-    padding: 40px;
-    width: 90%;
-    border-radius: 10px;
-    flex-direction: column;
-    align-items: center;
-}
-.main__content__jugabilidad__title {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 3rem;
-    margin-block: 10px;
-    font-family: 'Roboto Mono', monospace;
-
-}
-.main__content__jugabilidad__paragraph {
-    padding: 10px ;
-}
-.main__content__jugabilidad__iframe {
-    padding: 10px;
-    display: block;
-    width: auto;
-}
-
-.main__content__jugabilidad__iframe iframe {
-    height: 20rem;
-    width: 25rem;
-    margin-inline: 2rem;
-}
-
-.main__content__protas {
-    display: grid;
-    background-color: #ffffff;
-    padding: 40px;
-    width: 90%;
-    grid-template-columns: 1fr;
-    border-radius: 10px;
-    align-items: center;
-    gap: 2rem;
-}
-.main__content__protas__title {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 50px;
-    margin-block: 30px;
-    font-family: 'Roboto Mono', monospace;
-}
-.main__content__protas__submain{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-align: center;
-}
-.main__content__protas__submain__div1 {
-    width: 232px;
-    height: 404px;
-    margin-block: 20px;
-}
-.main__content__protas__submain__div {
-    width: 222px;
-    height: 267px;
-    margin-block: 20px;
-    margin-inline: 20px;
-}
-.main__content__protas__subtitle{
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-}
-.main__content__protas h4 {
-    font-size: 16px;
-}
-.main__content__regionstar {
-    display: flex;
-    background-color: #ffffff;
-    padding: 40px;
-    width: 90%;
-    flex-direction: column;
-    border-radius: 10px;
-    align-items: center;
-    gap: 2rem;
-}
-
-.main__content__regionstar__title {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 50px;
-    margin-block: 2rem;
-    font-family: 'Roboto Mono', monospace;
-}
-.main__content__regionstar__img {
-    display: flex;
-}
-.main__content__regionstar__img1 {
-    width: 50%;
-    gap: 1rem;
-    padding: 5px;
-
-}
-.main__foro {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-.main__content__foro {
-    display: flex;
-    background-color: #ffffff;
-    padding: 40px;
-    width: 100%;
-    flex-direction: column;
-    border-radius: 10px;
-    align-items: center;
-    gap: 2rem;
-}
-.main__content__foro__title {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 50px;
-    margin-block: 30px;
-    font-family: 'Roboto Mono', monospace;
-}
-.main__content__foro__form {
-    display: flex;
-    justify-content: center;
-    font-family: sans-serif;
-    flex-direction: column;
-}
-.main__content__foro__form__img {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    gap: 5rem;
-    margin-top: 1rem;
-}
-
-form {
-    display: flex;
-    width: 300px;
-    flex-direction: column;
-    background-color: white;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgb(71, 3, 6 , 0.7);
-}
-form label{
-    margin-bottom: 35px;
-}
-form label .fa-solid{
-    font-size: 20px;
-    color: #cb232c;
-    margin-right: 10px;
-}
-form label input{
-    outline: none;
-    border: none;
-    color: #252525;
-    border-bottom: solid 1px #ce1d61;
-    padding: 0 5px;
-    font-size: 18px;
-}
-form label input ::placeholder{
-    color: rgba(37, 37, 37, 0.5);
-}
-.main__content__foro__form__link {
-    color: #252525;
-    margin-bottom: 15px;
-}
-form button {
-    color: #ffffff;
-    border: none;
-    background: linear-gradient(to right, #cb232c, #ce1d61);
-    padding: 10px;
-    cursor: pointer;
-    font-size: 20px;
-    margin-bottom: 10px;
-
-}
-.main__content__foro__form__title {
-    color: #252525;
-    font-size: 35px;
-    font-weight: 800;
-    margin-bottom: 30px;
-
-}
-.main__content__forobox {
-    background-color: #ffffff;
-    border-radius: 10px;
-    width: 100%;
-}
-.main__content__forobox__h3 {
-    font-size: 30px;
-    text-align: center;
-    font-family: 'Roboto Mono', monospace;
-}
-.main__content__forobox__p {
-    text-align: start;
-    padding: 10px;
-    font-size:20px;
-    font-family: sans-serif;
-}
-.main__content__forobox__titles{
-    font-size: 25px;
-    font-family: 'Roboto Mono', monospace;
-}
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-block: 50px; }
 
 .footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-    background-color: rgb(82, 50, 197) ;
-    top: 0%;
-    position: sticky;
-    height: 90px;
-}
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #5232c5;
+  top: 0%;
+  position: sticky;
+  height: 90px; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fec356;
+  top: 0%;
+  position: sticky;
+  font-family: 'Roboto Mono', monospace; }
+
+.header__title {
+  font-family: 'Roboto Mono', monospace;
+  font-size: xx-large; }
+
+.header__content {
+  display: flex;
+  justify-content: space-between; }
+
+#header__content__navbar-gap {
+  display: flex;
+  gap: 1rem; }
+
+.header__logo {
+  cursor: pointer; }
+
+.header__content__navbar ul {
+  display: flex;
+  gap: 1rem; }
+
+.header__content__navbar li {
+  display: inline-block;
+  margin-inline: 20px;
+  transition: 0,3s; }
+
+.header__content__navbar li:hover {
+  font-size: 15px;
+  color: red;
+  border: 2px solid #252525;
+  background-color: white; }
+
+.header__content__navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  cursor: pointer; }
+
+.main__content {
+  display: flex;
+  background-color: #ffffff;
+  padding: 40px;
+  width: 90%;
+  border-radius: 10px;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center; }
+
+.main__content__title {
+  color: #030303;
+  text-align: center;
+  font-size: 50px;
+  margin-block: 30px;
+  font-family: 'Roboto Mono', monospace; }
+
+.main__content__ilustrations {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap; }
+
+.main__content__ilustrations__img {
+  height: 17rem;
+  width: auto;
+  padding: 0% 1rem; }
+
+.main__content__ilustrations__title {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace; }
+
+.main__content__paragraph {
+  padding: 1rem; }
 
 @media (max-width: 576px) {
-    .main__content__ilustrations__img {
-        height: 10rem;
-    }   
-    .main__content__jugabilidad__iframe iframe {
-        height: 10rem;
-        width: 15rem;
-    }
-    .main__content__jugabilidad__title {
-        font-size: 2rem;
-    }
-    .main__content__protas__title {
-        font-size: 2rem;
-    }
-    .main__content__protas__img {
-        height: 20rem;
-    } 
-    .main__content__protas__img1 {
-        height: 15rem;
-    }
-    .main__content__protas__img2 {
-        height: 13rem;
-        
-    }
-    .main__content__protas__submain {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        margin: 0%;
-        padding: 0%;
-    }
-    .main__content__protas {
-        width: 100%;
-    }
-    .main__content__jugabilidad {
-        width: 100%;
-    }
-    .main__content__regionstar {
-        width: 100%;
-    }
-    .main__content__regionstar__img1 {
-        width: 10rem;
-    }
-    .main__content__foro {
-        width: 100%;
-    }
-}
+  .main__content__ilustrations__img {
+    height: 10rem; } }
